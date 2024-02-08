@@ -1,30 +1,16 @@
 package gui;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.Polygon;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.Shape;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.MouseInfo;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+import board.*;
+import game.Game;
+import game.GameRunner;
+import game.Player;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Ellipse2D;
 import java.util.ArrayList;
-
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-
-import board.*;
-import game.*;
 
 
 public class CatanBoard extends JPanel{

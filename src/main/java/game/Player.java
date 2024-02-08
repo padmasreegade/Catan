@@ -1,11 +1,11 @@
 package game;
 
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import board.DevCard;
 import board.Road;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * This class is a Player in the game Settlers of Catan

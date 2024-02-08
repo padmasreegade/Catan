@@ -1,9 +1,8 @@
 package gui;
 
-import java.awt.Rectangle;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
-
-import javax.swing.JComponent;
 
 public class ComponentList extends ArrayList<KComponent> {
 	

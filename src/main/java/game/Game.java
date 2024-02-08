@@ -1,8 +1,9 @@
 package game;
 
+import board.*;
+
 import java.util.ArrayList;
 import java.util.Collections;
-import board.*;
 
 
 /**

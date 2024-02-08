@@ -1,8 +1,5 @@
 package board;
 
-import java.util.ArrayList;
-
-
 /**
  * Tile represents a single tile in a hexagonal grid
  */

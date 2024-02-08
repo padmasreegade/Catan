@@ -1,14 +1,17 @@
 package game;
 
 import gui.GameWindow;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
-import javax.swing.SwingUtilities;
-
-import board.DevCard;
-
+@SpringBootApplication
+@RestController
 public class GameRunner {
 	
 	private static Player currentPlayer;
@@ -19,14 +22,20 @@ public class GameRunner {
 	private static Player winner;
 
 	public static void main(String[] args) {
-		
-		players.add(new Player("DevMaster",	Color.ORANGE , 12,12,12,12,12,2));
+		SpringApplication.run(GameRunner.class);
+		System.setProperty("java.awt.headless", "false");
+		//startGame();
+	}
+
+	@GetMapping("/start")
+	public static void startGame(){
+		players.add(new Player("Ironman",	Color.ORANGE , 12,12,12,12,12,2));
 		players.add(new Player("Batman",	Color.BLACK));
 		players.add(new Player("Spiderman",	Color.RED));
 		players.add(new Player("Superman",	Color.BLUE));
-						
+
 		numberPlayers = players.size();
-		
+
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				GameWindow tmp = new GameWindow(players);
@@ -34,7 +43,7 @@ public class GameRunner {
 			}
 		});
 	}
-	
+
 	public static Player getCurrentPlayer() {
 		return currentPlayer;
 	}
@@ -43,14 +52,13 @@ public class GameRunner {
 		currentPlayer = players.get((index + 1) % 4);
 		index = (index + 1) % 4;
 	}
-	
 	public static void prevPlayer() {
 		currentPlayer = players.get((index - 1) % 4);
 		index = (index - 1) % 4;
 	}
 	
 	public static void setFirstPlayer() {
-		currentPlayer = players.get(0);
+		currentPlayer = players.getFirst();
 	}
 	
 	public static void setWinner(Player p) {

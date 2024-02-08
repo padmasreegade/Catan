@@ -1,8 +1,7 @@
 package gui;
 
-import java.awt.Rectangle;
-
-import javax.swing.JComponent;
+import javax.swing.*;
+import java.awt.*;
 
 public class KComponent {
 

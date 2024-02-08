@@ -2,21 +2,13 @@ package gui;
 
 import game.GameRunner;
 import game.Player;
+import lib.GraphPaperLayout;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Rectangle;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.Timer;
-
-import lib.GraphPaperLayout;
 
 public class BottomBar extends JPanel{
 	

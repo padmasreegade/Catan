@@ -1,39 +1,16 @@
 package gui;
 
+import board.DevCard;
 import game.Game;
 import game.GameRunner;
 import game.Player;
+import lib.GraphPaperLayout;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Rectangle;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.util.ArrayList;
-import java.util.Collections;
-//import java.util.concurrent.ExecutorService;
-//import java.util.concurrent.Executors;
-
-
-import javax.swing.AbstractAction;
-import javax.swing.AbstractButton;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.Timer;
-
-import board.Board;
-import board.DevCard;
-import board.Location;
-import board.Tile;
-import board.VertexLocation;
-import lib.GraphPaperLayout;
 
 public class SideBar extends JPanel {
 

@@ -1,17 +1,13 @@
 package gui;
 
-import game.*;
-
-import java.awt.Button;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.event.*;
-import java.util.ArrayList;
+import game.Player;
+import lib.GraphPaperLayout;
 
 import javax.swing.*;
-
-import lib.GraphPaperLayout;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 
 public class GameWindow {
